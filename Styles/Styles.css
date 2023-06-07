@@ -25,11 +25,19 @@
     padding-left: 10px;
     padding-top: 38px;
 }
+
+.main-cards-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .card{
     background-color: #F3F3F3;
     width: 300px;
-    display: inline-block;
     position: relative;
+    margin: 10px;
 }
 
 .banner-card{
@@ -82,4 +90,20 @@ footer section{
     background-color: #00669F;
     color: white;
     padding: 10px 0 10px 10px;
+}
+
+@media (min-width: 480px){
+    .main-cards-container{
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+}
+
+@media (min-width: 768px){
+    .main-cards-container{
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
 }
