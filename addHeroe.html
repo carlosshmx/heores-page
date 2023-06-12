@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/Styles/Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6e71113311.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Heroes</title>
+</head>
+<body>
+    <header>
+        <section class="cyan-label">
+            <p>Descuentos 20%</p>
+        </section>
+        <section class="blue-label">
+            <h1>Heroes</h1>
+        </section>
+    </header>
+    
+    <section>
+        <h2>Añadí tu super!</h2>
+        <p>Agrega a tu personaje favorito completando las opciones</p>
+        <form action="">
+            <div class="input-form">
+                <label for="nombre">*Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+            <div class="input-form">
+                <label for="cars">*Especie</label>
+                <select name="especies">
+                    <option value="mutante">Mutante</option>
+                    <option value="superSoldado">Super soldado</option>
+                    <option value="alien">Alien</option>
+                    <option value="kryptoniano">Kryptoniano</option>
+                    <option value="hechicero">Hechicero</option>
+                </select>
+            </div>
+            <div>
+                <label for="fecha">Fecha</label>
+                <input type="date" name="fecha">
+            </div>
+            <div>
+                <label for="foto">Agregar Foto</label>
+                <input type="file">
+            </div>
+            <div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Descripción"></textarea>
+            </div>
+            <div>
+                <p>Poderes</p>
+                <input type="checkbox" name="volar">
+                <label for="volar">Volar</label>
+                <input type="checkbox" name="smart">
+                <label for="smart">Superinteligencia</label>
+                <input type="checkbox" name="laser">
+                <label for="laser">Vista de rayo laser</label>
+                <input type="checkbox" name="cheto">
+                <label for="cheto">Billetera gorda</label>
+            </div>
+            <br>
+            <div>
+                <p>Tipo de personaje</p>
+                <input type="radio" name="tipo" id="bueno">
+                <label for="tipo">Héroe / Heroina</label>
+                <input type="radio" name="tipo" id="malo">
+                <label for="tipo">Villano / Villana</label>
+            </div>
+            <button>Añadir</button>
+
+        </form>
+    </section>
+</body>
+</html>
