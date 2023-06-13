@@ -123,6 +123,10 @@ footer section{
     flex-direction: column;
 }
 
+.button-add{
+    text-align: end;
+}
+
 @media (min-width: 480px){
     .main-cards-container{
         flex-direction: row;
