@@ -28,12 +28,12 @@
         <form action="">
             <article>
                 <div class="input-form">
-                    <label for="nombre">*Nombre</label>
-                    <input type="text" name="nombre" id="nombre">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" class="input-item">
                 </div>
                 <div class="input-form">
-                    <label for="cars">*Especie</label>
-                    <select name="especies">
+                    <label for="cars">Especie</label>
+                    <select name="especies" class="input-item">
                         <option value="mutante">Mutante</option>
                         <option value="superSoldado">Super soldado</option>
                         <option value="alien">Alien</option>
@@ -45,7 +45,7 @@
             <article>
                 <div class="input-form">
                     <label for="fecha">Fecha</label>
-                    <input type="date" name="fecha">
+                    <input type="date" name="fecha" class="input-item">
                 </div>
                 <div class="input-form">
                     <label for="foto">Agregar Foto</label>
@@ -54,8 +54,8 @@
             </article>
 
             <article>
-                <div>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Descripción"></textarea>
+                <div class="input-form">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Descripción" disabled></textarea>
                 </div>
                 <div class="selections">
                     <p>Poderes</p>
@@ -89,8 +89,10 @@
                     </div>  
                 </div>
             </article>
+            <article>
+                <button>Añadir</button>
+            </article>
             
-            <button>Añadir</button>
 
         </form>
     </section>

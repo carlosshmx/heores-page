@@ -105,17 +105,82 @@ footer section{
 
 .main-container article{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .input-form{
     display: flex;
     flex-direction: column;
     justify-content: start;
+    margin: 0.3rem;
 }
 
-.input-form input{
-    
+.input-form textarea{
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+}
+
+.input-form textarea:disabled{
+    background-color: #a8d6fe;
+}
+
+.input-item{
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+}
+
+.input-item:hover{
+    box-shadow: 0px 0px 15px rgb(158, 185, 255);
+}
+
+.input-item:focus{
+    background-color: #e3f2ff;
+}
+
+input[type="checkbox"]:checked{
+    accent-color:rgb(255, 221, 0);
+    box-shadow: 0px 0px 15px rgb(158, 185, 255);
+}
+
+
+input[type="radio"]:checked{
+    box-shadow: 0px 0px 15px rgb(158, 185, 255);
+    accent-color:rgb(255, 221, 0);
+}
+
+button{
+    margin: 1rem auto;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: #1CD1B0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+}
+
+button:hover{
+    background-color: #85f6e1;
+    box-shadow: 0px 0px 15px rgb(158, 185, 255);
+}
+
+button:active{
+    background-color: #85f6e1;
+    box-shadow: 0px 0px 15px rgb(158, 185, 255);
+    background-color: #1CD1B0;
+}
+
+
+
+label::after{
+    content: "*";
+    color: rgb(255, 221, 0);
 }
 
 .selections{
